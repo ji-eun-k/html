@@ -3,6 +3,18 @@
   <head>
     <title>민혁이 짱</title>
     <meta charset="utf-8">
+    <style>
+      #grid{
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+      ol{
+        padding-left:32px;
+      }
+      #article{
+        padding-left:25px;
+      }
+    </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156050117-1"></script>
 <script>
@@ -15,14 +27,18 @@
   </head>
   <body>
     <h1> <a href="index.html">민혀깅</a></h1>
-    <ol>
-      <li><a href="1.html">있잖아</a></li>
-      <li><a href="2.html">이민혁</a></li>
-      <li><a href="3.html">귀엽다</a></li>
-    </ol>
-    <ul>
-      <li>unordered list</li>
-    </ul>
-    <h2>민혁이 진짜 너무 귀엽지 않음??</h2>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">있잖아</a></li>
+        <li><a href="2.html">이민혁</a></li>
+        <li><a href="3.html">귀엽다</a></li>
+      </ol>
+    <div id="article">
+      <ul>
+        <li>unordered list</li>
+      </ul>
+      <h2>민혁이 진짜 너무 귀엽지 않음??</h2>
+    </div>
+  </div>
   </body>
 </html>
