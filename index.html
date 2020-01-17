@@ -3,7 +3,7 @@
   <head>
     <title>지은짱</title>
     <meta charset="utf-8">
-    <script src="https://ji-eun-k.github.io/html/snow.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <style>
       a {
@@ -25,6 +25,18 @@
     </style>
   </head>
   <body>
+    <script src="https://ji-eun-k.github.io/html/snow.js"></script>
+    <script> document.write(1+1)</script>
+    <input type="button" value="night" onclick="
+    document.querySelector('html').style.backgroundColor='black';
+    document.querySelector('body').style.backgroundColor='black';
+    ">
+    <input type="button" value="day" onclick="
+    alert('하늘색이 되었어용!');
+    document.querySelector('html').style.backgroundColor='skyblue';
+    document.querySelector('body').style.backgroundColor='skyblue';
+    ">
+    <input type="text" onchange="alert('changed!')">
     <h1> <a href="index.html">민혀깅</a></h1>
     <ol>
       <li><a href="1.html" class="saw">중복의</a></li>
