@@ -36,6 +36,19 @@
     document.querySelector('html').style.backgroundColor='powderblue';
     document.querySelector('body').style.backgroundColor='powderblue';
     ">
+    <input type="button" value="black" onclick="
+    if(document.querySelector('html').dataset.mode==='day'){
+      document.querySelector('html').style.backgroundColor='black';
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('html').dataset.mode='night';
+      this.value='day';
+    } else{
+      document.querySelector('html').style.backgroundColor='powderblue';
+      document.querySelector('body').style.backgroundColor='powderblue';
+      document.querySelector('html').dataset.mode='day';
+      this.value='night';
+    }"
+
     <input type="text" onchange="alert('changed!')">
     <h1> <a href="index.html">민혀깅</a></h1>
     <ol>
