@@ -26,31 +26,30 @@
   </head>
   <body>
     <script src="https://ji-eun-k.github.io/html/snow.js">
-    
+    function setaColor(mycolor){
+      var alist=document.querySelectorAll('a');
+      var i=0;
+      while(i<alist.length){
+        alist[i].style.color='mycolor';
+        i++;
+      }
+    }
     function nightDayHandler(self){
+
       var target1 = document.querySelector('html');
       var target2 = document.querySelector('body');
+
       if(self.value==='night'){
         target1.style.backgroundColor='black';
         target2.style.backgroundColor='black';
         self.value='day';
-        var alist=document.querySelectorAll('a');
-        var i=0;
-        while(i<alist.length){
-          alist[i].style.color='white';
-          i++;
-        }
+        setaColor('white');
+
       } else{
         target1.style.backgroundColor='powderblue';
         target2.style.backgroundColor='powderblue';
         self.value='night';
-        var alist=document.querySelectorAll('a');
-        var i=0;
-        while(i<alist.length){
-          alist[i].style.color='gray';
-          i++;
-        }
-      }
+        setaColor('gray');
     }
     </script>
 
