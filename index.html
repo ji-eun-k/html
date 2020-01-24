@@ -25,17 +25,15 @@
     </style>
   </head>
   <body>
-    <script src="https://ji-eun-k.github.io/html/snow.js"></script>
-    <script>
+    <script src="https://ji-eun-k.github.io/html/snow.js">
+    
+    function nightDayHandler(self){
       var target1 = document.querySelector('html');
       var target2 = document.querySelector('body');
-    </script>
-
-    <input type="button" value="day" onclick="
-      if(this.value==='night'){
+      if(self.value==='night'){
         target1.style.backgroundColor='black';
         target2.style.backgroundColor='black';
-        this.value='day';
+        self.value='day';
         var alist=document.querySelectorAll('a');
         var i=0;
         while(i<alist.length){
@@ -45,7 +43,7 @@
       } else{
         target1.style.backgroundColor='powderblue';
         target2.style.backgroundColor='powderblue';
-        this.value='night';
+        self.value='night';
         var alist=document.querySelectorAll('a');
         var i=0;
         while(i<alist.length){
@@ -53,6 +51,11 @@
           i++;
         }
       }
+    }
+    </script>
+
+    <input type="button" value="day" onclick="
+    nightDayHandler(this)
     ">
 
     <input type="text" onchange="alert('changed!')">
