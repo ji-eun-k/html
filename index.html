@@ -1,108 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>지은짱</title>
     <meta charset="utf-8">
-
-    <link rel="stylesheet" href="style.css">
+    <title>담쏙</title>
     <style>
-      a {
-        color:black;
-        text-decoration: none;
-      }
-      .saw {
-        color:gray;
-      }
-
-      #active {
-        color:red;
-      }
-
-      h1 {
-        font-size:45px;
-        text-align: center;
+      html, body{
+        padding:0px;
+        margin:0px;
       }
     </style>
-  </head>
-  <body>
-    <script src="https://ji-eun-k.github.io/html/snow.js">
-
-    function setaColor(mycolor){
-      var alist=document.querySelectorAll('a');
-      var i=0;
-      while(i<alist.length){
-        alist[i].style.color='mycolor';
-        i++;
-      }
-    }
-
-    function nightDayHandler(self){
-
-      var target1 = document.querySelector('html');
-      var target2 = document.querySelector('body');
-
-      if(self.value==='night'){
-        target1.style.backgroundColor='black';
-        target2.style.backgroundColor='black';
-        self.value='day';
-
-      } else{
-        target1.style.backgroundColor='powderblue';
-        target2.style.backgroundColor='powderblue';
-        self.value='night';
-    }
-    </script>
-
-    <input type="button" value="night" onclick="
-    nightDayHandler(this);
-    ">
-
-    <input type="text" onchange="alert('changed!')">
-    <h1> <a href="index.html">민혀깅</a></h1>
-    <ol>
-      <li><a href="1.html" class="saw">중복의</a></li>
-      <li><a href="2.html" class="saw" id="active">제거가</a></li>
-      <li><a href="3.html">필요하당</a></li>
-    </ol>
-
+    <script src="https://ji-eun-k.github.io/html/snow.js"> </script>
     <script>
-
-      var daeng ={
-        "puppy":"minhyuk",
-        "frog":"hyungwon",
-        "myboy":"hyuk"
-      };
-
-      document.write(daeng.puppy);
-      daeng["cm is"]="real";
-
-      daeng.showAll=function(){
-        for (var key in this){
-          document.write(key+' '+this[key]+'<br>');
+      function nightnday(self){
+        if(self.value==='night'){
+          document.querySelector('body').style.backgroundColor='black';
+          self.value='day';
+        }
+        else{
+          document.querySelector('body').style.backgroundColor='powderblue';
+          self.value='night';
         }
       }
-
     </script>
+  </head>
+  <body>
+    <input type="button" value="night" onclick="nightnday(this)"/>
+    <input type="text"/>
+    <div style="positon:relative; margin:0px; background-color: blue; width:100%; height:100%;">
+      <div style="display:table-cell;vertical-align:middle;">
+        <script>
+          var daeng = {
+            "puppy":"minhyuk",
+            "frog":"hyungwon",
+            "me":"cool girl"
+          };
 
-    daeng.showAll();
-
-    <ul>
-      <li>unordered list</li>
-    </ul>
-    <p> https://bitballoon.com
-http://neocities.org
-Azure Blob
-Google Cloud Storage
-Amazon S3 </p>
-
-    <h2><i><input type="checkbox">그 시절 우리가 사랑했던 우리</i></h2>
-
-    <p style="margin-top:40px;">잊지마</p><iframe width="560" height="315" src="https://www.youtube.com/embed/WcrPTyiCGAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>우리가 <font color=red>우리였던 날의</font> <b>눈부심</b>과 그 안에 <strong>그림처럼</strong> 나란했던 두사람</p>
-
-    <a href="https://twitter.com" target="_blank" title="민혀기 보러가깅"><image src="https://pbs.twimg.com/media/ENWXdXlUcAA0wVj?format=jpg&name=medium" width=450px></a>
-
-
-
-
+          daeng.seeAll = function(){
+            for(var key in this){
+              if (key==="seeAll"){
+                ;
+              }
+              else{
+                document.write('<br>'+key+' : '+this[key]);
+              }
+            }
+          }
+          daeng.seeAll();
+        </script>
+      </div>
+    </div>
   </body>
 </html>

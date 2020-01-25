@@ -95,5 +95,5 @@ for (i = 0; i <= snowMax; i++) {
 	document.write("<span id='flake" + i + "' style='" + snowStyles + "position:absolute;top:-" + snowMaxSize + "'>" + snowEntity + "</span>");
 }
 
-window.onresize = resize;
-window.onload = initSnow;
+window.addEventListener('resize', resize);
+window.addEventListener('load', initSnow);
