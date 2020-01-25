@@ -13,11 +13,46 @@
 
   gtag('config', 'UA-156050117-1');
 </script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+  function nightnday(self){
+    if(self.value==='night'){
+      document.querySelector('body').style.backgroundColor='black';
+      self.value='day';
+    }
+    else{
+      document.querySelector('body').style.backgroundColor='powderblue';
+      self.value='night';
+    }
+  }
+</script>
+
 <link rel="stylesheet" href="style.css">
 <style>
 </style>
   </head>
   <body>
+    <input type="button" value="night" onclick="nightnday(this)"/>
+
+    <script>
+      var daeng = {
+        "puppy":"minhyuk",
+        "frog":"hyungwon",
+        "me":"cool girl"
+      };
+
+      daeng.seeAll = function(){
+        for(var key in this){
+          if (key==="seeAll"){
+          }
+          else{
+            document.write('<br>'+key+' : '+this[key]);
+          }
+        }
+      }
+      daeng.seeAll();
+    </script>
     <h1> <a href="index.html">민혀깅</a></h1>
     <ol>
       <li><a href="1.html">있잖아</a></li>
@@ -42,6 +77,6 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
-    
+
   </body>
 </html>
