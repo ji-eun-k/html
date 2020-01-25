@@ -20,28 +20,31 @@
     </script>
   </head>
   <body>
-    <div style="width:100%;">
-    <input type="button" value="night" onclick="nightnday(this)"/>
+    <div style="position:fixed; z-index:-99; width:100%; height:100%;">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WcrPTyiCGAk?start=5&autoplay=1&controls=0" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+  </div>
+      <div style ="position: fixed; width:100%; height:100%">
+      <input type="button" value="night" onclick="nightnday(this)"/>
 
-    <input type="text"/>
-    <script>
-      var daeng = {
-        "puppy":"minhyuk",
-        "frog":"hyungwon",
-        "me":"cool girl"
-      };
+      <input type="text"/>
+      <script>
+        var daeng = {
+          "puppy":"minhyuk",
+          "frog":"hyungwon",
+          "me":"cool girl"
+        };
 
-      daeng.seeAll = function(){
-        for(var key in this){
-          if (key==="seeAll"){
-          }
-          else{
-            document.write('<br>'+key+' : '+this[key]);
+        daeng.seeAll = function(){
+          for(var key in this){
+            if (key==="seeAll"){
+            }
+            else{
+              document.write('<br>'+key+' : '+this[key]);
+            }
           }
         }
-      }
-      daeng.seeAll();
-    </script>
-  </div>
+        daeng.seeAll();
+      </script>
+      </div>
   </body>
   </html>
