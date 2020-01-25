@@ -3,13 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>담쏙</title>
-    <style>
-      html, body{
-        padding:0px;
-        margin:0px;
-      }
-    </style>
     <script src="https://ji-eun-k.github.io/html/snow.js"> </script>
+    <link rel="stylesheet" type="text/css" href="style".css">
     <script>
       function nightnday(self){
         if(self.value==='night'){
@@ -24,30 +19,28 @@
     </script>
   </head>
   <body>
-    <input type="button" value="night" onclick="nightnday(this)"/>
-    <input type="text"/>
-    <div style="position:relative; margin:0px; background-color: blue; width:100%; height:100%;">
-      <div style="display:table-cell;vertical-align:middle;">
-        <script>
-          var daeng = {
-            "puppy":"minhyuk",
-            "frog":"hyungwon",
-            "me":"cool girl"
-          };
 
-          daeng.seeAll = function(){
-            for(var key in this){
-              if (key==="seeAll"){
-                ;
-              }
-              else{
-                document.write('<br>'+key+' : '+this[key]);
-              }
-            }
+    <input type="button" value="night" onclick="nightnday(this)"/>
+
+    <input type="text"/>
+    <script>
+      var daeng = {
+        "puppy":"minhyuk",
+        "frog":"hyungwon",
+        "me":"cool girl"
+      };
+
+      daeng.seeAll = function(){
+        for(var key in this){
+          if (key==="seeAll"){
+            ;
           }
-          daeng.seeAll();
-        </script>
-      </div>
-    </div>
+          else{
+            document.write('<br>'+key+' : '+this[key]);
+          }
+        }
+      }
+      daeng.seeAll();
+    </script>
   </body>
-</html>
+  </html>
