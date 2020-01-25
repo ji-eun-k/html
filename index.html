@@ -26,6 +26,7 @@
   </head>
   <body>
     <script src="https://ji-eun-k.github.io/html/snow.js">
+
     function setaColor(mycolor){
       var alist=document.querySelectorAll('a');
       var i=0;
@@ -34,6 +35,7 @@
         i++;
       }
     }
+
     function nightDayHandler(self){
 
       var target1 = document.querySelector('html');
@@ -53,8 +55,20 @@
     }
     </script>
 
+/* daeng.showAll=function(){
+
+}
+
+function showAll(){
+
+}
+
+var showAll=function(){
+
+} */
+
     <input type="button" value="day" onclick="
-    nightDayHandler(this)
+    nightDayHandler(this);
     ">
 
     <input type="text" onchange="alert('changed!')">
@@ -64,17 +78,30 @@
       <li><a href="2.html" class="saw" id="active">제거가</a></li>
       <li><a href="3.html">필요하당</a></li>
     </ol>
+
     <script>
-      var couple=["leeminhyuk","kimjieun"];
-      document.write(couple[0]);
-      document.write(couple.length);
-      couple.push("chaehyungwon");
-      document.write(couple.length);
-      var i = 0;
-      while(i<couple.length){
-        document.write('<li>'+couple[i]+'</li>');
-        i++;
+
+      var daeng ={
+        "puppy":"minhyuk",
+        "frog":"hyungwon",
+        "myboy":"hyuk"
+      };
+
+      document.write(daeng.puppy);
+      daeng["cm is"]="real";
+
+      daeng.showAll=function(){
+        if(this[key]=function()){
+          ;
+        }
+        else{
+          for (var key in this){
+            document.write(key+' '+this[key]+'<br>');
+          }
+        }
       }
+
+      daeng.showAll();
     </script>
 
     <ul>
@@ -86,45 +113,11 @@ Azure Blob
 Google Cloud Storage
 Amazon S3 </p>
 
-    <h2><i><input type="checkbox">그 시절 우리가 사랑했던 우리</i></h2> <p style="margin-top:40px;">잊지마</p><iframe width="560" height="315" src="https://www.youtube.com/embed/WcrPTyiCGAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>우리가 <font color=red>우리였던 날의</font> <b>눈부심</b>과 그 안에 <strong>그림처럼</strong> 나란했던 두사람</p>
+    <h2><i><input type="checkbox">그 시절 우리가 사랑했던 우리</i></h2>
+
+    <p style="margin-top:40px;">잊지마</p><iframe width="560" height="315" src="https://www.youtube.com/embed/WcrPTyiCGAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>우리가 <font color=red>우리였던 날의</font> <b>눈부심</b>과 그 안에 <strong>그림처럼</strong> 나란했던 두사람</p>
+
     <a href="https://twitter.com" target="_blank" title="민혀기 보러가깅"><image src="https://pbs.twimg.com/media/ENWXdXlUcAA0wVj?format=jpg&name=medium" width=450px></a>
-
-      <div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://web-qqpbvfcwwc.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-<script id="dsq-count-scr" src="//web-qqpbvfcwwc.disqus.com/count.js" async></script>
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5e18896e7e39ea1242a3fffd/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 
 
 
