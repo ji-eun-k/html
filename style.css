@@ -1,9 +1,12 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-body{
-  background-color: powderblue;
+html,body{
   font-family: 'Noto Sans KR', sans-serif;
-  color:white;
   padding:0px;
   margin:0px;
   height:100%;
+}
+
+body{
+  background-color:powderblue;
+  color:white;
 }
