@@ -6,19 +6,19 @@
 |* since 2010
 |* licensed under the MIT License
 |* Enjoy.
-|* 
+|*
 |* Thanks,
 |* Sean */
 
 ;(function ($, window) {
 
     // test for feature support and return if failure
-    
+
     // defaults
     var defaults = {
         ratio: 16/9, // usually either 4/3 or 16/9 -- tweak as needed
         videoId: 'ZCAnLxRvNNc', // toy robot in space is a good default, no?
-        mute: true,
+        mute: false,
         repeat: true,
         width: $(window).width(),
         wrapperZIndex: 99,
@@ -99,6 +99,7 @@
 
         }
 
+
         // events
         $(window).on('resize.tubular', function() {
             resize();
@@ -139,7 +140,7 @@
     $.fn.tubular = function (options) {
         return this.each(function () {
             if (!$.data(this, 'tubular_instantiated')) { // let's only run one
-                $.data(this, 'tubular_instantiated', 
+                $.data(this, 'tubular_instantiated',
                 tubular(this, options));
             }
         });
