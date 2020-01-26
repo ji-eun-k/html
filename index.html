@@ -1,22 +1,21 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>담쏙</title>
-    <script src="https://ji-eun-k.github.io/html/snow.js"> </script>
+    <script src="js/snow.js"> </script>
     <link rel="stylesheet" type="text/css" href="style.css">
-
   </head>
   <body>
-    <div style="position:fixed; z-index:-99; width:100%; height:100%;">
-  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WcrPTyiCGAk?start=5&autoplay=1&controls=0&loop=1&playlist=WcrPTyiCGAk" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
-  </div>
-      <div style ="width:100%; height:100%">
-
-
-      <input type="text"/>
-
-      </div>
+    <div id="wrapper">
+      <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script src="js/jquery.tubular.1.0.js"></script>
+      <script>
+      $('document').ready(function() {
+        var options = { videoId: 'WcrPTyiCGAk', start: 5};
+        $('#wrapper').tubular(options);
+      });
+      </script>
+    </div>
   </body>
-  </html>
+</html>
