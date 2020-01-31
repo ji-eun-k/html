@@ -4,29 +4,26 @@
     <article>
 
     </article>
-    <input type="button" value="fetch" onclick="
-      /*
-      fetch('css').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML = text;
+    <script>
+      function fetchPage(name){
+        fetch(name).then(function(response){
+          response.text().then(function(text){
+            document.querySelector('article').innerHTML=text;
+          })
         })
-      })
-      */
-
-      function callbackme(){
-        console.log('response end');
       }
 
-      /* callbackme = function(){
-
-      } */
-      fetch('html').then(function(response){
-        console.log(response.status);
-        if(response.status=='404'){
-          alert('Not found')
-        }
-      });
-
+      function fetchConfirm(name){
+        fetch(name).then(function(response){
+          if(response.status=='404'){
+            document.write('Not found');
+          }
+        })
+      }
+    </script>
+    <input type="button" value="fetch" onclick="
+    fetchPage('css');
+    fetchConfirm('css');
     ">
   </body>
 </html>
