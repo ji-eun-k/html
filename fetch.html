@@ -5,10 +5,10 @@
 
     </article>
     <script>
-      function fetchPage(name){
+      function fetchPage(name,where){
         fetch(name).then(function(response){
           response.text().then(function(text){
-            document.querySelector('article').innerHTML=text;
+            document.querySelector(where).innerHTML=text;
           })
         })
       }
@@ -20,9 +20,11 @@
           }
         })
       }
+
+      fetchPage()
     </script>
     <input type="button" value="fetch" onclick="
-    fetchPage('css');
+    fetchPage('css','article');
     fetchConfirm('css');
     ">
   </body>
